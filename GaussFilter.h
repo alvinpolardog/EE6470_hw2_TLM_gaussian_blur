@@ -27,7 +27,7 @@ private:
   int o_red, o_green, o_blue;
 
   static const int image_size = 256;
-  const int mult_factor = 4;
+  const int mult_factor = 16;
   unsigned char red[3][image_size + 2];
   unsigned char green[3][image_size + 2];
   unsigned char blue[3][image_size + 2];

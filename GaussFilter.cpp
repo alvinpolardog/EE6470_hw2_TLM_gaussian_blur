@@ -41,7 +41,7 @@ void GaussFilter::do_filter() {
           }
         }
       }    
-      int result = ((((o_blue/mult_factor<<8)+ o_green/mult_factor)<<8) + o_red/mult_factor);
+      int result = ((((o_blue<<8)+ o_green)<<8) + o_red);
       o_result.write(result);
     }
   }
