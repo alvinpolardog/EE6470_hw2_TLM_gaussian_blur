@@ -39,6 +39,22 @@ Contrary to HW1 however, my implementation discarded the triple channels for ret
 for transfering information between the testbench and GaussFilter, after calculating a full row of pixel similar to in HW1, the results are converted 
 into a 4 byte integer and travels through the o_result FIFO channel before being sent back to the testbench again through the data_ptr.
 
+##  
+## 
+
+#### Overall Architecture
+The overall connection in HW2 is identical to Lab4, albeit with the information being transfered more similar to that of HW1.
+
+The testbench sends a single row at a time through its initiator sockets, with the destination address set to the GaussFilter module. The SimpleBus intercepts
+the transaction, route it toward the GaussFilter, and map the address into the local offset. The local offset is then used to provide the correct context
+for the information that is to be send back to the testbench, such as either the output result or the number of results available in the buffer.
+
+After receiving all the rows of the target image back from GaussFilter, the entire bitmap along with the header is then sent to the virtual memory through two
+individual transactions. Finally the memory is dumped to out.bmp.
+
+##  
+## 
+
 
 Original Image:
 
