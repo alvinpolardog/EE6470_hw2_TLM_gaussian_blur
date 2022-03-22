@@ -6,6 +6,12 @@ Link to [Github Repo](https://github.com/alvinpolardog/EE6470_hw2_TLM_gaussian_b
 
 ### Gaussian Blur with a TLM-2.0 interconnect
 
+In HW2, we are tasked to implement the Gaussian filter created in HW1 to the TLM interface. In this model, the transaction are routed through
+a bus that maps between global memory address and local offset.
+
+##  
+## 
+
 #### Routing
 
 Instead of directly routing the data through FIFO channels similar to that of HW1, TLM sockets are used this time to improve
@@ -51,6 +57,14 @@ for the information that is to be send back to the testbench, such as either the
 
 After receiving all the rows of the target image back from GaussFilter, the entire bitmap along with the header is then sent to the virtual memory through two
 individual transactions. Finally the memory is dumped to out.bmp.
+
+##  
+## 
+
+#### Final Discussion
+The change from just FIFO channels to TLM for the transaction between modules allow much better intercompatibility, this is evident in the fact that all the
+transaction can be routed through the SimpleBus module, and that any changes made in one module may no longer require changes in another. By following the 
+standard set out in TLM2.0, we will be able to incorporate other TLM modules in our designs without worry for incompatibility.
 
 ##  
 ## 
