@@ -42,8 +42,8 @@ into a 4 byte integer and travels through the o_result FIFO channel before being
 
 Original Image:
 
-![original image](https://github.com/alvinpolardog/EE6470_hw1_gaussian_blur/blob/main/lena_std_short.bmp)
+![original image](https://github.com/alvinpolardog/EE6470_hw2_TLM_gaussian_blur/blob/main/lena_std_short.bmp)
 
 Filtered Images:
 
-![filtered image](https://github.com/alvinpolardog/EE6470_hw1_gaussian_blur/blob/main/out.bmp)
+![filtered image](https://github.com/alvinpolardog/EE6470_hw2_TLM_gaussian_blur/blob/main/out.bmp)
