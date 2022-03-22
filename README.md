@@ -1,2 +1,3 @@
-# EE6470_hw2_TLM_gaussian_blur
-EE6470 Electronic System Level Design and Synthesis HW2
+# gauss_tlm_bus_mem
+
+Gauss filter module connected with a TLM bus and a Memory module
