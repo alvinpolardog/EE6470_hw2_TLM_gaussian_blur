@@ -24,7 +24,7 @@ How to run:
    make run
 ```
 
-6. Resulting image is saved as 'build/out.bmp'
+6. Resulting image is saved as 'lena_std_out.bmp'
 
 
 吳哲廷 學號:110061590
